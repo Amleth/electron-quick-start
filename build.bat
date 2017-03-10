@@ -1,1 +1,3 @@
-.\node_modules\.bin\electron-rebuild.cmd -v 1.6.2 -f -a x64 -d https://atom.io/download/electron
+cd node_modules\leveldown
+start /wait cmd /k "node-gyp rebuild --target=1.6.2 --arch=x64 --dist-url=https://atom.io/download/electron && exit"
+cd ..\..
