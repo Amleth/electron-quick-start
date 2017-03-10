@@ -21,6 +21,6 @@
   },
   "dependencies": {
     "electron": "^1.6.2",
-    "pouchdb": "^6.1.2"
+    "pouchdb-browser": "^6.1.2"
   }
 }

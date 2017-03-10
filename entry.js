@@ -1,4 +1,10 @@
-const PouchDB = require('pouchdb');
+const PouchDB = require('pouchdb-browser');
 const db = new PouchDB('carabistouille2');
-console.log(db);
-db.put({_id: 'thomas.bottini@gmail.com', name: 'Amleth',  age: 35});
+
+db.changes().on('change', function() {
+  console.log('Ch-Ch-Changes');
+});
+
+db.put({_id: Date.now().toString(), name: 'Amleth', age: 35}).catch(function(e) {
+  console.log(e);
+});
