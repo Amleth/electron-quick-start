@@ -17,6 +17,10 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^1.4.1"
+    "electron": "^1.6.2",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "pouchdb": "^6.1.2"
   }
 }
