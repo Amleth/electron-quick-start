@@ -1,0 +1,1 @@
+.\node_modules\.bin\electron-rebuild.cmd -v 1.6.2 -f -a x64 -d https://atom.io/download/electron
